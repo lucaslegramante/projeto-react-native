@@ -12,7 +12,7 @@ export default function DevFinance(){
         <SafeAreaView style={styles.container}>
 
           <View style={styles.containerLogo}> 
-               <Image source={logo} animation="flipInY" style={{width: '100%'}} resizeMode="contain" />
+               <Image style={{width: '100%', flex: 1}} source={logo} animation="flipInY"  resizeMode="contain" />
            </View>
 
           <View style={styles.containerData}>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   containerLogo:{
     flex:1,
-    backgroundColor:'red'
+    backgroundColor:'#2D4A22'
   },
   containerData:{
     flex:4,

@@ -7,9 +7,7 @@ import {
     TouchableOpacity
 } from 'react-native';
 import logo from '../../../assets/logo2.png'
-
 import * as Animatable from 'react-native-animatable'
-
 import {useNavigation} from '@react-navigation/native'
 
 export default function Welcome(){
@@ -17,7 +15,7 @@ export default function Welcome(){
     return (
         <View style={styles.container}>
            <View style={styles.containerLogo}> 
-               <Image source={logo} style={{width: '100%'}} resizeMode="contain" />
+               <Image style={{width: '100%', flex:2}} source={logo}  resizeMode="contain" />
            </View>
            <Animatable.View delay={600} animation ="fadeInUp" style={styles.containerForm}>
                <Text style={styles.title}>Seja bem vindo!</Text>
