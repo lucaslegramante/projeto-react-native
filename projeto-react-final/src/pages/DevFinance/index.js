@@ -18,16 +18,16 @@ export default function DevFinance(){
           <View style={styles.containerData}>
 
             <View style={styles.entradas}>
-              <Text>Entradas</Text>
+              <Text style={{fontWeight: 'bold'}}>Entradas</Text>
             </View>
 
             <View style={styles.saidas}>
-              <Text>Saidas</Text>
+              <Text style={{fontWeight: 'bold'}}>Saidas</Text>
             </View>
 
             <View
              style={styles.total}>
-              <Text>Total</Text>
+              <Text style={{fontWeight: 'bold'}}>Total</Text>
             </View>
 
             <Despesas {...despesas}
@@ -54,9 +54,10 @@ const styles = StyleSheet.create({
     backgroundColor:'#2D4A22'
   },
   entradas: {
-    paddingVertical: '80',
+    paddingVertical: 15,
+    paddingLeft: 140,
     backgroundColor:'#FFF',
-    justifyContent: 'center',
+    //justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 10,
     marginTop: 20,
@@ -65,12 +66,13 @@ const styles = StyleSheet.create({
     marginTop: 20,
     width: '100%',
     borderRadius:25
-  
+
   },
   saidas: {
-    paddingVertical: '80',
+    paddingVertical: 15,
+    paddingLeft: 140,
     backgroundColor:'#FFF',
-    justifyContent: 'center',
+    //justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 10,
     marginTop: 20,
@@ -79,12 +81,12 @@ const styles = StyleSheet.create({
     marginTop: 20,
     width: '100%',
     borderRadius:25
-
   },
   total: {
-    paddingVertical: '80',
+    paddingVertical: 15,
+    paddingLeft: 140,
     backgroundColor:'#FFF',
-    justifyContent: 'center',
+    //justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 10,
     marginTop: 20,
@@ -92,21 +94,21 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 20,
     width: '100%',
-    borderRadius:25
-
+    borderRadius:25,
+    marginBottom: 10,
+    marginTop: 20,
   },
   detail:{
-    paddingVertical: '80',
+    paddingVertical: 10,
     backgroundColor:'#FFF',
     justifyContent: 'center',
     display: 'grid',
     gridTemplateAreas: "'header' 'content' 'footer'",
     marginBottom: 10,
     marginTop: 20
-
   },
   despesas:{
-    paddingVertical: '80',
+    paddingVertical: 10,
     backgroundColor:'#FFF',
     justifyContent: 'center',
     marginBottom: 10,
