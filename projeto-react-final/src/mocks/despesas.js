@@ -2,35 +2,33 @@
 const despesas = {
     topo: {
         titulo: 'Descrição',
-        titulo2: 'Valor',
-        titulo3: 'Data'
+        titulo2: 'Valor'
     },
     detalhes: {
         list: [ 
             {
+                descricao: 'Salario Creditas',
+                valor: 4000.00
+            },
+            {
+                descricao: 'Boleto Faculdade',
+                valor: -400.00
+            },
+            {
                 descricao: 'Conta de Agua',
-                valor: '-100.00',
-                data: '02/02/2022'
+                valor: -123.00
             },
             {
-                descricao: '2Conta de Agua',
-                valor: '1000.00',
-                data: '02/02/2022'
+                descricao: 'Comissão',
+                valor: 500.00
             },
             {
-                descricao: '3Conta de Agua',
-                valor: '1000.00',
-                data: '02/02/2022'
+                descricao: 'Bonus',
+                valor: 100.00
             },
             {
-                descricao: '4Conta de Agua',
-                valor: '1000.00',
-                data: '02/02/2022'
-            },
-            {
-                descricao: '5Conta de Agua',
-                valor: '1000.00',
-                data: '02/02/2022'
+                descricao: 'Conserto Carro',
+                valor: -300.00
             },
         ]
     }

@@ -5,14 +5,13 @@ export default function Topo({ titulo, titulo2, titulo3 }) {
     return <View style={styles.topo}>
         <Text style={styles.texto}>{titulo}</Text>
         <Text style={styles.texto}>{titulo2}</Text>
-        <Text style={styles.texto}>{titulo3}</Text>
     </View>;
 }
 
 const styles = StyleSheet.create({
     topo: {
         flexDirection: "row",
-        paddingVertical: '80',
+        paddingVertical: 10,
         backgroundColor:'#FFF',
         alignItems: "center",
         justifyContent: 'center',
@@ -22,8 +21,11 @@ const styles = StyleSheet.create({
         borderRadius:25
     },
     texto: {
-        marginLeft: 100,
-        paddingVertical: 10,
-        paddingHorizontal:20
+        marginLeft: 50,
+        paddingVertical: 8,
+        paddingHorizontal:20,
+        fontSize:17,
+        alignItems: "center",
+        justifyContent: 'center',
     }
 });

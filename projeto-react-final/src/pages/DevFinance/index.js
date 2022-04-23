@@ -1,9 +1,13 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, FlatList, SafeAreaView} from 'react-native';
+import {View, Text, StyleSheet, Image, SafeAreaView} from 'react-native';
 
 import logo from '../../../assets/logo2.png';
 import Despesas from './despesas'
 import despesas from '../../mocks/despesas';
+import Entradas from './entradas'
+import Saidas from './saidas'
+import Total from './total'
+
 
 
 export default function DevFinance(){
@@ -17,21 +21,13 @@ export default function DevFinance(){
 
           <View style={styles.containerData}>
 
-            <View style={styles.entradas}>
-              <Text style={{fontWeight: 'bold'}}>Entradas</Text>
-            </View>
+            <Entradas {...despesas}/>
 
-            <View style={styles.saidas}>
-              <Text style={{fontWeight: 'bold'}}>Saidas</Text>
-            </View>
+            <Saidas {...despesas}/>
 
-            <View
-             style={styles.total}>
-              <Text style={{fontWeight: 'bold'}}>Total</Text>
-            </View>
+            <Total {...despesas}/>
 
             <Despesas {...despesas}
-            style={styles.despesas}
             />
 
           </View>
@@ -53,66 +49,4 @@ const styles = StyleSheet.create({
     flex:4,
     backgroundColor:'#2D4A22'
   },
-  entradas: {
-    paddingVertical: 15,
-    paddingLeft: 140,
-    backgroundColor:'#FFF',
-    //justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
-    marginTop: 20,
-    flexDirection: "row",
-    marginBottom: 10,
-    marginTop: 20,
-    width: '100%',
-    borderRadius:25
-
-  },
-  saidas: {
-    paddingVertical: 15,
-    paddingLeft: 140,
-    backgroundColor:'#FFF',
-    //justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
-    marginTop: 20,
-    flexDirection: "row",
-    marginBottom: 10,
-    marginTop: 20,
-    width: '100%',
-    borderRadius:25
-  },
-  total: {
-    paddingVertical: 15,
-    paddingLeft: 140,
-    backgroundColor:'#FFF',
-    //justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
-    marginTop: 20,
-    flexDirection: "row",
-    marginBottom: 10,
-    marginTop: 20,
-    width: '100%',
-    borderRadius:25,
-    marginBottom: 10,
-    marginTop: 20,
-  },
-  detail:{
-    paddingVertical: 10,
-    backgroundColor:'#FFF',
-    justifyContent: 'center',
-    display: 'grid',
-    gridTemplateAreas: "'header' 'content' 'footer'",
-    marginBottom: 10,
-    marginTop: 20
-  },
-  despesas:{
-    paddingVertical: 10,
-    backgroundColor:'#FFF',
-    justifyContent: 'center',
-    marginBottom: 10,
-    marginTop: 20
-  },
-
 })

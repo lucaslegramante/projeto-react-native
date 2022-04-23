@@ -51,13 +51,14 @@ const styles = StyleSheet.create({
         paddingEnd: '5%'
     },
     title: {
-        fontSize:24,
+        fontSize:30,
         fontWeight:'bold',
         marginTop:28,
         marginBottom:12
     },
     text: {
-        color: '#a1a1a1'
+        color: '#a1a1a1',
+        fontSize:18,
     },
     button:{
         position: 'absolute',
