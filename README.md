@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="dev.finances" title="dev.finances" src=".\projeto-react-native\projeto-react-final\logo.svg" width="220px" />
+  <img alt="dev.finances" title="dev.finances" src="https://github.com/lucaslegramante/projeto-react-native/blob/376f0b81244b20c3789ec173ad21039564cc1748/projeto-react-final/logo.svg" width="220px" />
 </h1>
 
 <p align="center">
