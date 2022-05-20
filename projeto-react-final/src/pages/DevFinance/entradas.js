@@ -7,6 +7,7 @@ export default function Entradas({detalhes}){
       return acc + (cur.valor>0 ? cur.valor : 0);
     },0)
   }
+  
     return (
         <View style={styles.entradas}>
           <Text style={styles.entradasText}>Entradas</Text>
