@@ -13,9 +13,8 @@ export default function Entradas({detalhes}){
           <Text style={styles.entradasTextValor}>{parseFloat(somaEntradas()).toFixed(2)}</Text>
         </View>
     )
-
 }
-//push or add na list quando for criar uma desespesas
+//push or add na list quando for criar uma desespesas// legras do futuro
 
 const styles = StyleSheet.create({
   entradas: {
