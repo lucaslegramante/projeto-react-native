@@ -2,15 +2,20 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 export default function Entradas({detalhes}){
+  const somaEntradas = () => {
+    return detalhes.list.reduce((acc, cur) => {
+      return acc + (cur.valor>0 ? cur.valor : 0);
+    },0)
+  }
     return (
         <View style={styles.entradas}>
           <Text style={styles.entradasText}>Entradas</Text>
-          <Text style={styles.entradasTextValor}>4600.00</Text>
+          <Text style={styles.entradasTextValor}>{parseFloat(somaEntradas()).toFixed(2)}</Text>
         </View>
     )
 
-    
 }
+//push or add na list quando for criar uma desespesas
 
 const styles = StyleSheet.create({
   entradas: {
