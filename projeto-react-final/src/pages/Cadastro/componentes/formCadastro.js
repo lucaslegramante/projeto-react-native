@@ -19,7 +19,7 @@ export default function FormCadastro() {
             </View>
 
             <View style={styles.containerButton}>
-              <TouchableOpacity onPress={() => Alert.alert('oieoieoie')} 
+              <TouchableOpacity onPress={() => Alert.alert('Cadastro concluido com sucesso!')} 
                   style={styles.button}>
                    <Text style={styles.buttonText}>Cadastrar</Text>
                </TouchableOpacity>
@@ -31,7 +31,7 @@ export default function FormCadastro() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 0.6,
         paddingVertical: 8,
         backgroundColor:'#FFF',
         width: '100%',
@@ -40,18 +40,22 @@ const styles = StyleSheet.create({
     },
     input: {
         fontSize:17,
-        backgroundColor: '#DCDCDC',
-        borderRadius:25,
-        width: '50%'
+        backgroundColor: '#FFF',
+        width: '60%',
+        borderWidth: 1,
+        height: '100%', 
+        paddingLeft:5,
     },
     input2: {
         fontSize:17,
-        backgroundColor: '#DCDCDC',
-        borderRadius:25,
-        width: '50%'
+        backgroundColor: '#FFF',
+        width: '60%',
+        borderWidth: 1,
+        height: '100%',
+        paddingLeft:5,
     },
     textInput1:{
-       fontSize:15,
+       fontSize:18,
        width: '22%', 
        paddingLeft: 14,
 
@@ -59,12 +63,11 @@ const styles = StyleSheet.create({
     viewInput:{
         flex:0.1,
         flexDirection: "row",
-        //justifyContent: "center",
         
     },
     texto:{
         alignItems: "center",
-        fontSize: 18,
+        fontSize: 25,
         fontWeight: "bold",
         justifyContent: "center",
     },
@@ -72,7 +75,6 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     button:{
-        position: 'absolute',
         backgroundColor:'#2D4A22',
         borderRadius: 50,
         paddingVertical: 8,
@@ -80,7 +82,8 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         bottom: '15%',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        color: 'blue'
     },
     buttonText: {
         fontSize: 18,

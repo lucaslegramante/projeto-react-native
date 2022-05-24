@@ -38,8 +38,11 @@ const styles = StyleSheet.create({
     backgroundColor:'#2D4A22'
   },
   button:{
-    backgroundColor: '#DCDCDC',
-    borderRadius:25
+    backgroundColor: '#FFF',
+    borderRadius:25,
+    borderWidth: 1,
+    width:"15%",
+    alignItems: 'center'
   },
   containerButton:{
     flex:0.2,
