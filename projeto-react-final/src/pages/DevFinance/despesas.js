@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, FlatList, View } from 'react-native';
+import { FlatList } from 'react-native';
 
 import Detalhes from './componentes/detalhes';
 import Topo from './componentes/topo';

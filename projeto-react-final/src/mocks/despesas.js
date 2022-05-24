@@ -19,11 +19,11 @@ const despesas = {
                 valor: -123.00
             },
             {
-                descricao: 'Comissão       ',
+                descricao: 'Comissão',
                 valor: 500.00
             },
             {
-                descricao: 'Bonus Anual    ',
+                descricao: 'Bonus Anual',
                 valor: 100.00
             },
             {

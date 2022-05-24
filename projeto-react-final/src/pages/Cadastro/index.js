@@ -1,18 +1,11 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image, SafeAreaView,TouchableOpacity} from 'react-native'
 import {useNavigation} from '@react-navigation/native'
-
 import logo from '../../../assets/logo2.png';
-import Despesas from './despesas'
-import despesas from '../../mocks/despesas';
-import Entradas from './entradas'
-import Saidas from './saidas'
-import Total from './total'
-import Topo from './componentes/topo'
+import FormCadastro from './componentes/formCadastro'
 
 
-
-export default function DevFinance(){
+export default function Cadastro(){
   const navigation = useNavigation()
 
     return (
@@ -20,29 +13,14 @@ export default function DevFinance(){
 
           <View style={styles.containerLogo}> 
                <Image style={{width: '100%', flex: 1}} source={logo} animation="flipInY"  resizeMode="contain" />
-           </View>
-
-          <View style={styles.containerData}>
-
-            <Entradas {...despesas}/>
-
-            <Saidas {...despesas}/>
-
-            <Total {...despesas}/>
-
-            <Despesas {...despesas}
-            />
-
           </View>
 
+          <FormCadastro />
+
           <View style={styles.containerButton}>
-              <TouchableOpacity onPress={() => navigation.navigate('Welcome')} 
+              <TouchableOpacity onPress={() => navigation.navigate('DevFinance')} 
                   style={styles.button}>
                    <Text style={styles.buttonText}>Voltar</Text>
-               </TouchableOpacity>
-               <TouchableOpacity onPress={() => navigation.navigate('Cadastro')} 
-                  style={styles.button}>
-                   <Text style={styles.buttonText}>Cadastrar nova movimentação</Text>
                </TouchableOpacity>
           </View>
 
@@ -59,16 +37,12 @@ const styles = StyleSheet.create({
     flex:1,
     backgroundColor:'#2D4A22'
   },
-  containerData:{
-    flex:4,
-    backgroundColor:'#2D4A22'
-  },
   button:{
     backgroundColor: '#DCDCDC',
     borderRadius:25
   },
   containerButton:{
-    flex:0.3,
+    flex:0.2,
     flexDirection: "row",
     width:"100%",
     alignItems: "center",

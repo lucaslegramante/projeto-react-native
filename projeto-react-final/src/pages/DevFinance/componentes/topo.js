@@ -1,31 +1,36 @@
 import React from 'react';
 import {StyleSheet, Text, View } from 'react-native';
 
-export default function Topo({ titulo, titulo2, titulo3 }) {
-    return <View style={styles.topo}>
-        <Text style={styles.texto}>{titulo}</Text>
-        <Text style={styles.texto}>{titulo2}</Text>
-    </View>;
+export default function Topo({titulo,titulo2}) {
+    return (
+        <View style={styles.topo}>
+            <Text style={styles.texto}>{titulo}</Text>
+            <Text style={styles.texto2}>{titulo2}</Text>
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({
     topo: {
         flexDirection: "row",
-        paddingVertical: 10,
+        paddingVertical: 8,
         backgroundColor:'#FFF',
-        alignItems: "center",
-        justifyContent: 'center',
-        marginBottom: 10,
-        marginTop: 20,
+        marginTop: 10,
         width: '100%',
-        borderRadius:25
+        borderRadius:25,
+        alignItems: 'center',
     },
     texto: {
-        marginLeft: 50,
-        paddingVertical: 8,
-        paddingHorizontal:20,
+        flex: 1,
+        paddingVertical: 5,
         fontSize:17,
-        alignItems: "center",
-        justifyContent: 'center',
+        paddingLeft: 30,
+        fontWeight: 'bold'
+    },
+    texto2: {
+        flex: 1,
+        paddingVertical: 5,
+        fontSize:17,
+        fontWeight: 'bold'
     }
 });

@@ -4,27 +4,29 @@ import { Text, StyleSheet, View } from 'react-native';
 export default function Detalhes({ item: {descricao, valor} }) {
     return <View style={styles.topo}>
         <Text style={styles.texto}>{ descricao }</Text>
-        <Text style={styles.texto}>{ valor }</Text>
+        <Text style={styles.texto2}>{ parseFloat(valor).toFixed(2) }</Text>
     </View>;
 }
 
 const styles = StyleSheet.create({
     topo: {
         flexDirection: "row",
+        paddingVertical: 8,
         backgroundColor:'#FFF',
-        marginBottom: 10,
-        marginTop: 20, 
+        marginTop: 10,
+        width: '100%',
         borderRadius:25,
-        alignItems: "center",
-        justifyContent: 'center',
+        alignItems: 'center',
     },
     texto: {
-        flexDirection: "row",
-        marginLeft: 50,
+        flex: 1,
         paddingVertical: 5,
-        borderRadius:25,
-        fontSize: 15,
-        alignItems: "center",
-        justifyContent: 'center',
+        fontSize:13,
+        paddingLeft: 30,
+    },
+    texto2: {
+        flex: 1,
+        paddingVertical: 5,
+        fontSize:13,
     }
 });

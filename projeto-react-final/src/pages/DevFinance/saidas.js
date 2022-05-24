@@ -2,10 +2,15 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 export default function Saidas({detalhes}){
+  const somaSaidas = () => {
+    return detalhes.list.reduce((acc, cur) => {
+      return acc + (cur.valor<0 ? cur.valor : 0);
+    },0)
+  }
     return (
         <View style={styles.saidas}>
           <Text style={styles.saidasText}>Saidas</Text>
-          <Text style={styles.saidasTextValor}>-823.00</Text>
+          <Text style={styles.saidasTextValor}>{parseFloat(somaSaidas()).toFixed(2)}</Text>
         </View>
     )
 
@@ -14,34 +19,26 @@ export default function Saidas({detalhes}){
 
 const styles = StyleSheet.create({
     saidas: {
-    paddingVertical: 15,
-   // paddingHorizontal: 100,
-    backgroundColor:'#FFF',
-    //justifyContent: 'center',
-    //alignItems: 'center',
-    marginBottom: 10,
-    marginTop: 20,
-    flexDirection: "row",
-    marginBottom: 10,
-    marginTop: 20,
-    width: '100%',
-    borderRadius:25
+      paddingVertical: 15,
+      backgroundColor:'#FFF',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 10,
+      marginTop: 20,
+      flexDirection: "row",
+      width: '100%',
+      borderRadius:25,
   },
   saidasText: {
     fontWeight: 'bold',
     fontSize: 20,
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingLeft: 100,
+    paddingLeft: 30,
   },
   saidasTextValor: {
     fontWeight: 'bold',
     fontSize: 20,
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingLeft: 100,
-    color: 'red'
+    color: '#B22222'
   }
 })
