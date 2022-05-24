@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import PropTypes from 'prop-types';
-
 class SomaEntradas extends React.Component {
     static protoTypes = {
         valor: PropTypes.number.isRequired,
