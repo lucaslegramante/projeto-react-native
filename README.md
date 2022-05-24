@@ -23,3 +23,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O dev.finances é uma aplicação mobile de controle financeiro. 💰
 
 ## 📱 Design
+![image](https://user-images.githubusercontent.com/33455461/169938587-d02fccbb-817f-43b5-8f00-6981d399e6ba.png)
+
